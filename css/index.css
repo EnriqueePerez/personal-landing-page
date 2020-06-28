@@ -1,3 +1,18 @@
+@import url("https://fonts.googleapis.com/css2?family=Fjalla+One&family=Source+Sans+Pro&display=swap");
+
 header {
   background-color: papayawhip;
+}
+
+body {
+  font-family: "Source Sans Pro", sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Fjalla One", sans-serif;
 }
