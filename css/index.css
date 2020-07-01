@@ -1,11 +1,32 @@
 @import url("https://fonts.googleapis.com/css2?family=Fjalla+One&family=Source+Sans+Pro&display=swap");
 
 header {
-  background-color: papayawhip;
+  background-color: #1d252c;
+  display: flex;
+  justify-content: space-between;
+  height: 70px;
+  color: white;
 }
 
+.header ol {
+  display: flex;
+  align-items: center;
+}
+
+.header ol li {
+  height: inherit;
+}
+
+.header a {
+  height: inherit;
+  padding: 0 10px;
+  /*A las anclas que esten adentro del header se les agrega este diseño*/
+  color: white;
+  text-decoration: none;
+}
 body {
   font-family: "Source Sans Pro", sans-serif;
+  margin: 0px;
 }
 
 h1,
@@ -15,4 +36,230 @@ h4,
 h5,
 h6 {
   font-family: "Fjalla One", sans-serif;
+  font-weight: normal;
+}
+
+h1 {
+  font-size: 40px;
+  line-height: 1.5;
+  letter-spacing: -0.2px;
+  font-style: italic;
+  color: white;
+  margin: 0px;
+  align-self: center;
+  /* text-transform: uppercase; */
+}
+
+h1 strong {
+  color: #026fff;
+}
+
+h2 {
+  color: #026fff;
+  text-transform: uppercase;
+  font-family: "Source Sans Pro", sans-serif;
+  font-weight: bold;
+  font-size: 24px;
+  margin-bottom: 40px;
+}
+
+ol,
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.hero {
+  height: 300px;
+  /* background-image: url("../images/hero.jpeg");
+  background-size: 500px;
+  background-repeat: no-repeat;
+  background-position: right; */
+  background-color: #1d252c;
+  display: flex;
+  justify-content: space-between;
+}
+
+.hero-image {
+  object-fit: cover;
+}
+.portfolio {
+  background: #fafafa;
+  padding: 20px;
+}
+
+.project {
+  /* tamaño tipo estilo */
+  /* border-top: 10px solid red;
+  border-right: 10px solid green;
+  border-left: 10px solid blue;
+  border-bottom: 10px solid yellow; */
+
+  /* Lo mismo que arriba pero mas explicito */
+  /* border-color: red; 
+  border-width: 15px;
+  border-style: solid; */
+
+  /* Colocar redondeado individual a cada esquina */
+  /* border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px; */
+
+  border: 1px solid gray;
+  border-radius: 10px;
+  margin-bottom: 15px;
+  /* margin: 10px; */
+  padding: 20px;
+  background: white; /*background es la forma general para poder ocupar todos los tipos de background */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.project-title {
+  font-size: 30px;
+  margin-top: 0;
+  margin: 10px 0;
+}
+.project-tools,
+.project-date,
+.project-url {
+  margin: 10px 0;
+}
+
+.project-details {
+  font-size: 20px;
+  width: 500px;
+}
+.project strong {
+  font-family: "Fjalla One", sans-serif;
+}
+.project-imageContainer {
+  width: 500px;
+}
+
+.footer {
+  background-color: #1b2127;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.footer img {
+  vertical-align: middle;
+}
+.footer a {
+  color: white;
+}
+
+.experience-container {
+  display: flex;
+  justify-content: space-around;
+}
+.experience {
+  margin: 10px;
+  width: 480px;
+  border-radius: 10px;
+  background: #f4fbff;
+  box-shadow: -2px -2px 5px #5b5b5c;
+}
+
+.experience img {
+  object-fit: cover;
+  position: relative;
+  display: flex;
+}
+.experience-image {
+  align-self: center;
+  margin: auto;
+}
+.event-detail {
+  margin: 20px 40px;
+  margin-top: -40px;
+  background-color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+.experience-url {
+  border: 1px solid #056fff;
+  text-decoration: none;
+  padding: 5px 20px;
+  color: #056fff;
+  border-radius: 5px;
+}
+
+.experience-list-title {
+  margin-left: 20px;
+}
+
+.contact {
+  background-color: #056fff;
+  color: white;
+  height: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.social-link {
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  background-size: 50px 50px;
+  margin: 0 10px;
+}
+
+.social-link.twitter {
+  background-image: url("../images/icons8-twitter.svg");
+}
+
+.social-link.linkedin {
+  background-image: url("../images/icons8-linkedin.svg");
+}
+
+.social-link.github {
+  background-image: url("../images/icons8-github.svg");
+}
+
+.social-link.instagram {
+  background-image: url("../images/icons8-instagram.svg");
+}
+
+.form-email input {
+  border-color: gray;
+  border-style: solid;
+  border-radius: 5px;
+  padding: 5px 20px 5px 25px;
+  background-image: url("../images/icons8-envelope-24.png");
+  background-repeat: no-repeat;
+  background-size: 15px 15px;
+  background-position-y: center;
+  background-position-x: 5px;
+}
+
+.form-email button {
+  display: block;
+  margin-top: 10px;
+  background: transparent;
+  color: white;
+  width: 100px;
+  padding: 5px 0;
+  border-radius: 5px;
+  border-style: solid;
+}
+
+.form-email h3 {
+  font-family: "Source Sans Pro", sans-serif;
+}
+
+.wrapper {
+  width: 1000px;
+  margin: 0 auto;
+  display: inherit;
+  justify-content: inherit;
+  align-items: inherit;
+  height: inherit;
 }

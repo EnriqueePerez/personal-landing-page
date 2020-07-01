@@ -1,61 +1,184 @@
 <!DOCTYPE html>
 <html lang="es">
   <head>
-    <meta charset="UTF-8">
+    <meta charset="UTF-8" />
     <title>Este es mi portafolio</title>
-    <link rel="icon" type="image/png" href="images/Master.png">
-    <link rel="stylesheet" href="css/index.css">
+    <link rel="icon" type="image/png" href="images/Master.png" />
+    <link rel="stylesheet" href="css/index.css" />
   </head>
   <body>
-    <ol>
-      <li>
-        <a href="#Portfolio">Portafolio</a>
-      </li>
-      <li>
-        <a href="#Experiencia">Experiencia</a>
-      </li>
-      <li>
-        <a href="#Colaboracion">Trabajemos Juntos</a>
-      </li>
-    </ol>
     <header class="header">
-      <section>
-        <h1>
-          Hola! Soy <strong>Enrique Perez,</strong> <br /> Sofware Developer
-           <br /> <strong>in progress</strong>
-        </h1>
-        <img src="images/hero.jpeg" alt="Imagen de portada" width="500px"/>
-      </section>
+      <div class="wrapper">
+        <h1>Enrique Perez</h1>
+        <ol>
+          <li>
+            <a href="#Portfolio">Portafolio</a>
+          </li>
+          <li>
+            <a href="#Experiencia">Experiencia</a>
+          </li>
+          <li>
+            <a href="#Colaboracion">Trabajemos Juntos</a>
+          </li>
+        </ol>
+      </div>
     </header>
+    <section class="hero">
+      <div class="wrapper">
+        <h1>
+          Hola! Soy <strong>Enrique Perez</strong> <br />
+          Sofware Developer <br />
+          <strong>in progress</strong>
+        </h1>
+        <img class="hero-image" src="images/hero.jpeg" alt="Imagen de portada"
+        width="500px"" />
+      </div>
+    </section>
     <section id="Portfolio" class="portfolio">
-      <h2>Portafolio (Proyectos Destacados)</h2>
-      <article class="project">
-        <h3 class="project-title">Domotica en el aula</h3>
-        <h6 class="project-tools">React / Node.js / Raspberry Pi</h6>
-        <p class="project-date"><small><strong>Fecha:</strong> 01/06/2020</small></p></article></section>
-        <p class="project-url"><small><strong>Puedes verlo en:</strong> www.github.com/enriqueperez084</small></p>
-        <p class="project-description">Domotica implementada en un salon ed clases utilizando IoT y Node.js</p>
-      </article>
+      <div class="wrapper">
+        <h2>Portafolio (Proyectos Destacados)</h2>
+        <article class="project">
+          <div class="project-details">
+            <h3 class="project-title">Domotica en el aula</h3>
+            <h6 class="project-tools">React / Node.js / Raspberry Pi</h6>
+            <p class="project-date">
+              <small><strong>Fecha:</strong> 01/06/2020</small>
+            </p>
+            <p class="project-url">
+              <small
+                ><strong>Puedes verlo en:</strong>
+                www.github.com/enriqueperez084</small
+              >
+            </p>
+            <p class="project-description">
+              Domotica implementada en un salon ed clases utilizando IoT y
+              Node.js
+            </p>
+          </div>
+          <figure class="project-imageContainer">
+            <img
+              width="500px"
+              alt="Imagen de Proyecto"
+              src="./images/Domotica.jpg"
+            />
+          </figure>
+        </article>
+        <article class="project">
+          <div class="project-details">
+            <h3 class="project-title">Domotica en el aula</h3>
+            <h6 class="project-tools">React / Node.js / Raspberry Pi</h6>
+            <p class="project-date">
+              <small><strong>Fecha:</strong> 01/06/2020</small>
+            </p>
+            <p class="project-url">
+              <small
+                ><strong>Puedes verlo en:</strong>
+                www.github.com/enriqueperez084</small
+              >
+            </p>
+            <p class="project-description">
+              Domotica implementada en un salon ed clases utilizando IoT y
+              Node.js
+            </p>
+          </div>
+          <figure class="project-imageContainer">
+            <img
+              width="500px"
+              alt="Imagen de Proyecto"
+              src="./images/Domotica.jpg"
+            />
+          </figure>
+        </article>
+      </div>
     </section>
-  
-    <section id="Experiencia">
-      <h2>Más sobre mi experiencia</h2>
-      <article class="experience">
-        <figure class="experience-imageContainer">
-          <img class="experience-image" src="images/Master.png"alt="Imagen de Platzi Master">
-        </figure>
-        <h3 class="experience-title">Platzi Master [C4]</h3>
-        <p class="experience-description">El programa de Platzi para sus mejores estudiantes</p>
-        <a class="experience-url" href="https://platzi.com/blog/que-es-platzi-master/">Conoce más</a>
-      </article>
-    </section>
-    <section id="Colaboracion" class="contact">
-    <form action="/suscripcion/" class="form-email">
-      <h3>¿Creamos algo juntos?</h3>
-      <input type="email" placeholder="Déjame tu email" id="email">
-      <button>Enviar</button>
-    </form>
-    </section>
-    <footer class="footer">Pie de pagina</footer>
+    <div class="wrapper">
+      <h2 id="Experiencia" class="experience-list-title">Más sobre mi experiencia</h2>
+      <section class="experience-container">
+        <article class="experience">
+          <figure class="experience-imageContainer">
+            <img
+              class="experience-image"
+              src="images/Master.png"
+              alt="Imagen de Platzi Master"
+            />
+          </figure>
+          <div class="event-detail">
+            <h3 class="experience-title">Platzi Master [C4]</h3>
+            <p class="experience-description">
+              El programa de Platzi para sus mejores estudiantes
+            </p>
+            <a
+              class="experience-url"
+              href="https://platzi.com/blog/que-es-platzi-master/"
+              >Conoce más</a
+            >
+          </div>
+        </article>
+        <article class="experience">
+          <figure class="experience-imageContainer">
+            <img
+              class="experience-image"
+              src="images/Master.png"
+              alt="Imagen de Platzi Master"
+            />
+          </figure>
+          <div class="event-detail">
+            <h3 class="experience-title">Platzi Master [C4]</h3>
+            <p class="experience-description">
+              El programa de Platzi para sus mejores estudiantes
+            </p>
+            <a
+              class="experience-url"
+              href="https://platzi.com/blog/que-es-platzi-master/"
+              >Conoce más</a
+            >
+          </div>
+        </article>
+        </section>
+      </div>
+      </section>
+      <section id="Colaboracion" class="contact">
+        <div class="wrapper">
+          <form action="/suscripcion/" class="form-email">
+            <h3>¿Creamos algo juntos?</h3>
+            <input type="email" placeholder="Déjame tu email" id="email" />
+            <button>Enviar</button>
+          </form>
+          <div class="social">
+            <a
+              href="https://twitter.com/EnriqueePerez"
+              class="social-link twitter"
+            ></a>
+            <a
+              href="https://www.linkedin.com/in/enrique-perez-aquino-012b12199/"
+              class="social-link linkedin"
+            ></a>
+            <a
+              href="https://github.com/enriqueperez084"
+              class="social-link github"
+            ></a>
+            <a
+              href="https://www.instagram.com/kike_perez084/"
+              class="social-link instagram"
+            ></a>
+          </div>
+        </div>
+      </section>
+    <footer class="footer">
+      <div class="wrapper">
+      <div>
+        <p>
+          Curso de Desarrollo Web <img src="./images/Master.png" width="40"
+          alt="Platzi Master"
+        </p>
+      </div>
+      <div>
+        <p>
+          Design with <\3 by
+          <a href="https://twitter.com/thespianartist">@thespianartist</a>
+        </p>
+      </div>
+      </div>
+    </footer>
   </body>
 </html>
