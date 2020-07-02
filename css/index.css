@@ -132,13 +132,20 @@ ul {
 
 .project-details {
   font-size: 20px;
-  width: 500px;
+  width: 50%;
 }
 .project strong {
   font-family: "Fjalla One", sans-serif;
 }
+
+figure {
+  margin: 0;
+}
 .project-imageContainer {
-  width: 500px;
+  width: 50%;
+}
+.project-imageContainer img {
+  max-width: 100%;
 }
 
 .footer {
@@ -160,7 +167,6 @@ ul {
 .experience-container {
   display: flex;
   justify-content: space-around;
-  flex-wrap: wrap;
 }
 .experience {
   margin: 10px;
@@ -273,6 +279,9 @@ ul {
 
 /* Desktop first se empieza desde MQ mas grande */
 @media screen and (max-width: 1024px) {
+  .wrapper {
+    padding: 0 1em;
+  }
 }
 
 @media screen and (max-width: 767px) {
@@ -290,9 +299,67 @@ ul {
   .header h1 {
     text-align: center;
   }
+  .project {
+    display: block;
+  }
+  .project-details {
+    width: auto;
+  }
+  .project-imageContainer {
+    width: auto;
+    text-align: center;
+  }
+  .project-title {
+    font-size: 1.5em;
+    margin-bottom: 0.3em;
+  }
+  .project-tools {
+    font-size: 0.7em;
+  }
+  .project-date {
+    font-size: 1em;
+  }
+  .project-url {
+    font-size: 1em;
+  }
+  .project-description {
+    font-size: 0.8em;
+  }
+  .project-tools,
+  .project-date,
+  .project-url {
+    margin: 0.4em 0;
+  }
+  .experience {
+    width: 100%;
+  }
+  .experience-container {
+    flex-wrap: wrap;
+  }
 }
 
 @media screen and (max-width: 480px) {
+  .project-details {
+    font-size: 12px;
+  }
+  .contact {
+    height: auto;
+    padding: 1em 0;
+    display: block;
+    text-align: center;
+  }
+  .form-email button {
+    margin: 1em auto;
+    padding: 0.5em 0;
+  }
+  .form-email h3 {
+    margin-top: 0;
+  }
+  .footer {
+    display: block;
+    text-align: center;
+    border: 1px solid transparent; /*Se ocupa para evitar el margin colapsing*/
+  }
 }
 
 @media screen and (max-width: 320px) {
