@@ -322,6 +322,7 @@ figure {
   top: 5px;
   color: white;
 }
+
 /* Desktop first se empieza desde MQ mas grande */
 @media screen and (max-width: 1024px) {
   .wrapper {
@@ -356,13 +357,13 @@ figure {
     display: block;
     height: auto;
   }
-  .header ol {
+  /* .header ol {
     display: block;
   }
   .header ol li {
     height: 40px;
     text-align: center;
-  }
+  } */
   .header h1 {
     text-align: center;
   }
@@ -403,6 +404,29 @@ figure {
   .experience-container {
     flex-wrap: wrap;
   }
+  .header ol {
+    position: fixed;
+    background-color: #5b5b5cc2;
+    z-index: 3;
+    top: 0;
+    left: -100vw;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    transition: 0.3s;
+  }
+  .header ol li {
+    height: 0.5em;
+    padding: 0.5em;
+    margin-top: 1em;
+    font-size: 1.5em;
+  }
+  .menu.is-active {
+    left: 0;
+  }
 }
 
 @media screen and (max-width: 480px) {
@@ -437,6 +461,9 @@ figure {
   h1 {
     font-size: 1.1em;
   }
+  .link {
+    font-size: 0.9em;
+  }
 }
 
 @media screen and (max-width: 320px) {
@@ -448,5 +475,8 @@ figure {
   }
   .hero-image {
     top: -45%;
+  }
+  .link {
+    font-size: 0.8em;
   }
 }

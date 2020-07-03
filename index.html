@@ -9,11 +9,11 @@
     <link rel="stylesheet" href="css/index.css" />
   </head>
   <body>
-    <i class="icon-menu burger-button"></i>
+    <i id="burger-menu" class="icon-menu burger-button"></i>
     <header class="header">
       <div class="wrapper">
         <h1>Enrique Perez</h1>
-        <ol>
+        <ol class="menu">
           <li>
             <a href="#Portfolio">Portafolio</a>
           </li>
@@ -53,6 +53,7 @@
                 ><a
                   style="text-transform: none;"
                   href="https://github.com/enriqueperez084/proyectoDomotica"
+                  class="link"
                 >
                   github.com/enriqueperez084/proyectoDomotica</a
                 >
@@ -84,6 +85,7 @@
                 ><a
                   style="text-transform: none;"
                   href="https://github.com/enriqueperez084/proyectoDomotica"
+                  class="link"
                 >
                   github.com/enriqueperez084/proyectoDomotica</a
                 >
@@ -198,5 +200,20 @@
         </div>
       </div>
     </footer>
+    <script>
+      const menu = document.querySelector(".menu");
+      const burgerButton = document.querySelector("#burger-menu");
+      // console.log(burgerButton);
+      // console.log(menu);
+      function active() {
+        if (menu.classList.contains("is-active")) {
+          menu.classList.remove("is-active");
+        } else {
+          menu.classList.add("is-active");
+        }
+      }
+      burgerButton.addEventListener("click", active);
+      // console.log(menu);
+    </script>
   </body>
 </html>
