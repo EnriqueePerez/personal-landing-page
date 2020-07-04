@@ -6,3 +6,5 @@ This page was made in the [Web Development Course](https://platzi.com/cursos/htm
 **It is not my official page**
 
 It was made just to practice HTML and CSS
+
+You can find the site [here](https://enriqueperez084.github.io/personal-landing-page/index.html)
