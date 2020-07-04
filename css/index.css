@@ -324,7 +324,7 @@ figure {
 }
 
 /* Desktop first se empieza desde MQ mas grande */
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1023px) {
   .wrapper {
     padding: 0 1em;
   }
@@ -478,5 +478,10 @@ figure {
   }
   .link {
     font-size: 0.8em;
+  }
+  .social-link {
+    height: 40px;
+    width: 40px;
+    background-size: 100%;
   }
 }
