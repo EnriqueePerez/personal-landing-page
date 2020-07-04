@@ -203,6 +203,22 @@
     <script>
       const menu = document.querySelector(".menu");
       const burgerButton = document.querySelector("#burger-menu");
+      const ipad = window.matchMedia("screen and (max-witdh: 767px)");
+
+      burgerButton.addEventListener("click", active);
+
+      ipad.addListener(validation);
+
+      function validation(event) {
+        if (event.matches) {
+          console.log("true");
+          burgerButton.addEventListener("click", active);
+        } else {
+          console.log("false");
+          burgerButton.removeEventListener("click", active);
+        }
+      }
+      // validation(ipad);
       // console.log(burgerButton);
       // console.log(menu);
       function active() {
@@ -212,7 +228,7 @@
           menu.classList.add("is-active");
         }
       }
-      burgerButton.addEventListener("click", active);
+
       // console.log(menu);
     </script>
   </body>
